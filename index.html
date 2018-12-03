@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="css/materialize.min.css" />
+    <link rel="stylesheet" media="screen" href="css/all.min.css" />
+    <title>Page Title</title>
+    <style>
+        header{
+            background: url("images/header.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+            padding: 30px;
+        }
+        .nav-sign-up , .header-sign-up{border-radius: 20px;}
+        .content-header{margin-top:150px;}
+        img.responsive-img, video.responsive-video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper transparent z-depth-0">
+            <div class="container-wide">
+                <a href="#" class="brand-logo">closesheet</a>
+                <ul class="right">
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">OUR TEAM</a</li> <li><a href="#" class="btn white pink-text waves-effect nav-sign-up">JOIN
+                                CLOSED BETA</a></li>
+                </ul>
+        </nav>
+        <div class="row content-header">
+            <div class="container-wide">
+                <div class="col s12 l5 white-text">
+                    <h3>Visual editing layer for your regular website.</h3>
+                    <p>Stop struggling with Wordpress themes. Create a simple HTML website without
+                        thinking about content editing. Have content editing layer for free without spending a minute.</p>
+                    <a href="#" class="btn white-text pink header-sign-up">JOIN CLOSED BETA</a>
+                </div>
+                <div class="col s12 l7 container">
+                    <a href="#invite" class="modal-trigger"><img src="images/editor.png" class="responsive-img"></a>
+                    <div class="modal" id="invite">
+                        <div class="modal-content center">
+                            <h4>We're in Invite-only Beta</h4>
+                            <p>Enter your email below and we'll give</p>
+                            <p>you heads up when we open for more people.</p>
+                            <div class="input-field">
+                                <input type="text" id="email">
+                                <label for="email">Your Best Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="name">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <a class="btn pink white-text">Get Invite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        })
+    </script>
+</body>
+
+</html>
