@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="css/materialize.min.css" />
     <link rel="stylesheet" media="screen" href="css/all.min.css" />
     <title>Page Title</title>
@@ -21,6 +23,9 @@
         img.responsive-img, video.responsive-video {
             max-width: 100%;
             height: auto;
+        }
+        header.close-btn{
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -48,7 +53,8 @@
                     <a href="#invite" class="modal-trigger"><img src="images/editor.png" class="responsive-img"></a>
                     <div class="modal" id="invite">
                         <div class="modal-content center">
-                            <h4>We're in Invite-only Beta</h4>
+                            <a hre="#" class="btn-floating right modal-close"><i class="material-icons">close</i></a>
+                            <h4 style="margin-top:100px">We're in Invite-only Beta</h4>
                             <p>Enter your email below and we'll give</p>
                             <p>you heads up when we open for more people.</p>
                             <div class="input-field">
